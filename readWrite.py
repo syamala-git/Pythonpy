@@ -1,5 +1,4 @@
 file = open('test.txt')
-#print(file.read(4))
 
 '''
 print("---")
@@ -17,6 +16,7 @@ while line!= "":
 
 file.close()
 '''
-#print line by line using readlines method
+
+# print line by line using readlines method
 for line in file.readlines():
     print(line)
