@@ -1,49 +1,57 @@
+"""
+Demonstration of Python control flow: if-else, for loops, while loops, break, and continue
+"""
+
+# ===== IF-ELSE EXAMPLE =====
 greet = "Good Morning"
-if greet == "Morning":
+if greet == "Good Morning":
     print(greet)
 else:
     print("Value does not match")
 
-print("if else completed")
+print("if else completed\n")
 
-print("******FOR LOOP*****")
-al = [1, 2, 3, 4, 5]
-for i in al:
-    print(i*2)
+# ===== FOR LOOP EXAMPLE =====
+print("****** FOR LOOP *****")
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num * 2)
 
-j=0
-for k in range(1,6):
-    j = j+k*2
-print(j)
+# Calculate sum with transformation
+total = sum(k * 2 for k in range(1, 6))
+print(total)
 
-print("******SKIP FIRST INDEX*****")
-for m in range(10):
-    print(m)
+# ===== RANGE LOOP EXAMPLE =====
+print("\n****** SKIP FIRST INDEX *****")
+for index in range(10):
+    print(index)
 
-print("******WHILE LOOP*****")
+# ===== WHILE LOOP EXAMPLE =====
+print("\n****** WHILE LOOP *****")
+counter = 4
+while counter >= 1:
+    if counter != 3:
+        print(counter)
+    counter -= 1
 
-it=4
-while it >= 1:
-    if it!=3:
-        print(it)
-    it = it-1
-
-print("******BREAK*****")
-it=7
-while it >= 1:
-    if it == 3:
+# ===== BREAK EXAMPLE =====
+print("\n****** BREAK *****")
+counter = 7
+while counter >= 1:
+    if counter == 3:
         break
-    print(it)
-    it = it-1
+    print(counter)
+    counter -= 1
 
-print("******CONTINUE*****")
-it=7
-while it >= 1:
-    if it == 6:
-        it = it - 1
-        continue # rest of the steps are skipped
-
-    if it == 3:
+# ===== CONTINUE EXAMPLE =====
+print("\n****** CONTINUE *****")
+counter = 7
+while counter >= 1:
+    if counter == 6:
+        counter -= 1
+        continue  # Skip rest of the iteration
+    
+    if counter == 3:
         break
-    print(it)
-    it = it - 1
+    print(counter)
+    counter -= 1
