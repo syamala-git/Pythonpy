@@ -2,7 +2,7 @@ str = "RahulshettyAcademy.com"
 
 str2 = "Consultancy"
 
-str3 = "Rahuldd"
+str3 = "Rahul"
 
 print(str[1])
 print(str[0:5])

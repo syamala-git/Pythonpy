@@ -1,7 +1,6 @@
 """
 Demonstration of Python control flow: if-else, for loops, while loops, break, and continue
 """
-
 # ===== IF-ELSE EXAMPLE =====
 greet = "Good Morning"
 if greet == "Good Morning":
@@ -19,7 +18,16 @@ for num in numbers:
 
 # Calculate sum with transformation
 total = sum(k * 2 for k in range(1, 6))
-print(total)
+print("{}{}".format("Total is :", total))
+
+summation = 0
+for i in range(1, 6):
+    summation = summation + i
+print("{} {}".format("Summation is: ", summation))
+
+print("****** FOR JUMPING *****")
+for j in range(1, 6, 2):
+    print(j)
 
 # ===== RANGE LOOP EXAMPLE =====
 print("\n****** SKIP FIRST INDEX *****")
@@ -32,9 +40,10 @@ counter = 4
 while counter >= 1:
     if counter != 3:
         print(counter)
-    counter -= 1
+    counter = counter-1
+    #counter -= 1
 
-# ===== BREAK EXAMPLE =====
+# ===== BREAK EXAMPLE - Breaks abruptly=====
 print("\n****** BREAK *****")
 counter = 7
 while counter >= 1:
@@ -50,7 +59,7 @@ while counter >= 1:
     if counter == 6:
         counter -= 1
         continue  # Skip rest of the iteration
-    
+
     if counter == 3:
         break
     print(counter)
