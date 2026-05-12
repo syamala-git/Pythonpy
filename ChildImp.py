@@ -8,7 +8,7 @@ class ChildImp(Calc):
 
     def getCompleteData(self):
         return self.num2 + self.num + self.Addition()
-
+        #100+10+(2+10+10)
 
 obj2 = ChildImp()
 print(obj2.getCompleteData())
